@@ -1,0 +1,30 @@
+{
+    "name": "ayush/jeopardy",
+    "description": "This is game for fun and check your knowledge",
+    "authors": [
+        {
+            "name": "Ayush Kumar",
+            "email": "Shanushan960@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Madhu verma",
+            "email": "madhu@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+    		"psr-4": {
+    			"Classes\\": "classes/",
+                "Classes\\Models\\": "classes/models/"
+    		},
+    		"files": [
+    			"functions/helper.php"
+    		]
+    },
+    "license": "MIT",
+    "require": {
+        "symfony/routing": "^5.2",
+        "nikic/fast-route": "^1.3"
+    }
+}

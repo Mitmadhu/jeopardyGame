@@ -1,0 +1,461 @@
+:root{
+	--spacing: 15px;
+	--bgColor: #fafafa;
+	--colorText: #2394d2;
+}
+
+body, *{
+	/*font-family: 'Dancing Script','Oxygen', sans-serif;*/
+	font-family: 'Tomato Round Condensed Oblique', sans-serif;
+	/*font-family: 'Tomato Round Condensed Thin', sans-serif;
+	font-family: 'Tomato Round Condensed', sans-serif;*/
+	font-size: 24px;
+
+}
+.hideit{
+	display: none;
+}
+
+#authBody{
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(58,4,36,1) 0%, rgba(221,71,128,1) 3%, rgba(121,9,37,0.3939775739397321) 47%, rgba(107,212,233,1) 89%);
+}
+.callout.small{
+	padding-top: 0.5rem;
+	padding-right: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	width: 65%;
+	margin: auto;
+	    margin-bottom: auto;
+	height: auto;
+	height: `;
+	margin-bottom: 5px;
+}
+.callout.small p{
+	margin-bottom: 2px;
+}
+#login-container{
+	background: white;
+	/*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,37,0.3939775739397321) 42%, rgba(107,212,233,1) 89%);*/
+	width: 68%;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 10px;
+	padding-bottom: 10vh;
+}
+
+
+/*-------------------- game ------------------------*/
+.red{
+	color: red;
+}
+.green{
+	color: green;
+}
+#control{
+	display: flex;
+    margin-left: auto;
+    padding-top: 20px;
+    justify-content: center;
+}
+#score-card, #winner{
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#score-card .game-card{
+	width: 250px;
+	margin: 5px 20px;
+	box-shadow: 10px 9px 5px -1px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 9px 5px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 9px 5px -1px rgba(0,0,0,0.75);
+}
+
+#score-card .game-card .card-section{
+	padding: 10px 0;
+	background-color: rgb(246, 201, 244);
+}
+
+#winner .game-card{
+	width: 250px;
+	margin: 5px 20px;
+	box-shadow: 10px 9px 5px -1px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 9px 5px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 9px 5px -1px rgba(0,0,0,0.75);
+	display: flex;
+	flex-direction: row;
+}
+#winner .game-card .card-section{
+	padding: 10px 0;
+	background-color: #b0f9ae;
+}
+#winner .game-card .sticker{
+	background-color: #b0f9ae;
+}
+
+aside.sticker {
+  font-size: 20px;
+  text-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+  color: black;
+  width: 85px;
+  height: 85px;
+  display: inline-block;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(135deg, transparent 32px, #aaa 20px, #eee);
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  float: right;
+}
+aside.sticker:after {
+  content: " ";
+  display: block;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(135deg, transparent 110px, #000 100px,#666 100px, #fff 85%);
+  box-shadow: -3px -3px 15px 1px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  height: 100px;
+  margin-left: 56px;
+  margin-top: -4px;
+}
+aside.sticker.cyan {
+  color: white;
+  background: -webkit-linear-gradient(135deg, transparent 32px, #2d8aa6 20px, #57b1c7);
+}
+
+#board{
+	display: none;
+}
+#alert-msg{
+	display: none;
+}
+#openModal{
+	display: none;
+}
+.category-heading{
+	background-color: #e6e6e6;
+	padding-top: 24px;
+	border: 5px solid black;
+}
+.game-td{
+	width: 100px;
+	background-color: #2a3698;
+	padding-top: 24px;
+	border: 5px solid black;
+}
+.game-td:hover{
+	/*border-color: #ffff5d;*/
+}
+.game-td button{
+	background-color: #2a3698;
+}
+.game-td button:hover{
+	border-color: #ffff5d;
+}
+.game-table{
+	width: 60%;
+	margin: auto;
+}
+
+.response-span{
+	font-weight: bold;
+	font-size: 1.35rem;
+	color: white;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 1rem 0;
+	padding: 0.85em 1em;
+	line-height: 1;
+	text-align: center;
+}
+
+.game-card{
+	padding: 5px;
+	text-align: center;
+	border: 3px solid #c8bbbb;
+}
+
+.game-card img{
+	margin:auto;
+}
+
+#total-incorrect{
+	font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+#total-correct{
+	font-size: 30px;
+    font-weight: bold;
+    color: #3adb76;
+}
+#total-score{
+	font-size: 30px;
+    font-weight: bold;
+    color: green;
+}
+.timer{
+
+}
+
+
+/*home dashboard uss*/
+#code{
+	border: 2px solid green;
+	width: 50%;
+	margin: auto;
+    margin-bottom: auto;
+	margin-bottom: 20px;
+}
+
+.home-head-div{
+	margin: 30px;
+  	background-color: #ffffff;
+  	border: 7px solid #090d8c;
+  	opacity: 0.6;
+}
+.head-center{
+	text-align: center;
+	margin: 5%;
+	font-weight: bold;
+	color: #000000;
+	font-family: 'Tomato Round Condensed Oblique', sans-serif;
+}
+.success.button.large.start-button{
+    font-size: 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold;
+
+}
+
+.start-button:hover{
+	box-shadow: 10px 10px 8px 5px #888888;
+}
+
+.start-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*---------- abhishek -------------*/
+.f1 {
+  color: red;
+}
+.help-text sup {
+  color: red;
+}
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-button {
+  background-color: black;
+  font-size: 20px;
+}
+.login-button:hover {
+  background-color: cornsilk;
+  color: black;
+}
+
+label {
+  font-size: 24px;
+}
+
+.insert-button {
+  margin: 0% 46%;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.insert-button:hover {
+  background-color: rgb(41, 117, 41);
+}
+.play-button-container {
+  margin: 15% 50%;
+}
+.play-button {
+  border-radius: 50%;
+  font-size: 30px;
+  background-image: linear-gradient(-180deg, #ff89d6 0%, #c01f9e 100%);
+  box-shadow: 0 1rem 1.25rem 0 rgba(22, 75, 195, 0.5),
+    0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset,
+    0 0.75rem 0.5rem rgba(255, 255, 255, 0.4) inset,
+    0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
+  width: 200px;
+}
+.play-button:hover {
+  background-image: linear-gradient(-180deg, #714963 0%, #c01f9e 100%);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+.profile-container {
+  display: flex;
+}
+.left-profile-container {
+  flex: 30%;
+  border: solid 1px;
+  height: 850px;
+}
+.right-profile-container {
+  flex: 70%;
+  border: solid 1px;
+  height: 850px;
+}
+
+.profile-photo {
+  height: 100%;
+  width: 100%;
+  padding: 20%;
+}
+.profile-photo img {
+  height: 300px;
+  width: 300px;
+  max-width: auto !important;
+  border-radius: 50%;
+}
+.upload-button {
+  position: relative;
+  left:50%;
+  top: 46%;
+  background-color: transparent;
+}
+.upload-button:hover {
+  background-color: transparent;
+}
+
+.upload-button i {
+  font-size: 30px;
+  color: white;
+}
+.buttons {
+  flex-direction: column;
+  display: flex;
+  padding: 18%;
+}
+.card-container{
+  width: 30rem ; 
+  position: fixed;
+  top: 35%;
+  left: 40%;
+  right: 30%;
+  display:none
+}
+
+
+/*---------------------- profile page ----------------------------*/
+
+.colorText{
+	color: var(--colorText);
+}
+.container{
+	display: flex;	
+}
+.container #left{
+	display:flex;
+	flex-direction:column;
+    border-right: 2px solid #e6e6e62323e6e6;
+    margin: 0 var(--spacing);
+    background-color: var(--bgColor);
+    border-right: 2px solid #e6e6e6;
+    
+}
+.container #left #profilePic img{
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	margin: 20px 10px;
+	cursor: pointer;
+}
+.container .right{
+	flex: 1;
+}
+.container #left #details li{
+	list-style-type: none;
+
+}
+
+.container #right{
+	background-color: var(--bgColor);
+	border-left: 2px solid #e6e6e6;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 0 var(--spacing);
+	justify-content: center;
+	/*align-items: center;*/
+}
+.container #right .singleForm{
+	margin: var(--spacing);
+}
+.container #right .singleForm input{
+		
+}
+#right .callout.small{
+	margin-top: var(--spacing);
+}
+.reveal h3{
+	text-align:center;
+}
+.reveal .mainImageContainer{
+	display: flex;
+	flex-wrap:wrap;
+}
+.reveal .imageContainer{
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	padding: 10px;
+}
+.reveal .mainImageContainer img{
+	height:150px;
+	width: 180px;
+	cursor: pointer;
+}
+.selected{
+	border: 2px solid green;
+}
+
+/*------------ contact ------------------*/
+
+#contactContainer{
+	margin: var(--spacing);
+	background-color: var(--bgColor);
+	/*display: flex;*/
+	justify-content: center;
+	align-items: center;
+}
+
+#contactContainer textarea {
+  height: 120px;
+  resize: none;
+}
+
+#contactContainer .callout{
+	display
+	margin: var(--spacing);
+	justify-content: center;
+	align-items: center;
+}
+.displayFlex{
+	display: flex;
+}
+.contactInfo{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10%;
+}
+.contactInfo .developer{
+
+}
